@@ -1,0 +1,23 @@
+.menu{
+  width: 100%;
+
+  &__list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(lg){
+      flex-direction: column;
+    }
+  }
+
+  &__item{
+    font-size: 35px;
+    color: $gray;
+    transition: 0.3s;
+
+    &:hover{
+      color: $light_blue;
+    }
+  }
+}

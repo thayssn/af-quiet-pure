@@ -1,0 +1,17 @@
+$light_blue: #81afe3;
+$green: #85e1d7;
+$purple: #af94eb;
+$coral: #de5a69;
+$gray: #666;
+
+
+.bg{
+  &--purple{
+    background-color: $purple;
+    color: white;
+  }
+  &--green{
+    background-color: $green;
+    color: $gray;
+  }
+}

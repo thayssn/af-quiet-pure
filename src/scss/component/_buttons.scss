@@ -1,0 +1,16 @@
+.btn{
+  font-size: 35px;
+  display: block;
+  text-align: center;
+
+  &--coral{
+    color: white;
+    background-color: $coral;
+    padding: 26px 0;
+    width: 100%;
+  }
+
+  &--uppercase{
+    text-transform: uppercase;
+  }
+}
