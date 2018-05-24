@@ -18,24 +18,86 @@ img{
 
 h2{
   font-size: 82px;
+
+  @include media-breakpoint-down(sm){
+    font-size: 82px
+  }
+
+  @include media-breakpoint-down(xs){
+    font-size: 41px
+  }
 }
 
 h3{
   font-size: 75px;
   font-weight: 300;
+  line-height: 1;
+
+  @include media-breakpoint-down(lg){
+    font-size: 37px
+  }
+
+  @include media-breakpoint-down(md){
+    font-size: 75px
+  }
+
+  @include media-breakpoint-down(xs){
+    font-size: 37px
+  }
 }
 
 h4{
   font-size: 41px;
   font-weight: bold;
+
+  @include media-breakpoint-down(lg){
+    font-size: 20px;
+  }
+
+  @include media-breakpoint-down(md){
+    font-size: 41px;
+  }
+
+  @include media-breakpoint-down(xs){
+    font-size: 20px;
+  }
+
 }
 
 h5{
   font-size: 57px;
+
+  @include media-breakpoint-down(lg){
+    font-size: 28px;
+  }
+
+  @include media-breakpoint-down(md){
+    font-size: 55px;
+  }
+
+  @include media-breakpoint-down(xs){
+    font-size: 28px;
+  }
+
 }
 
 p{
   font-size: 25px;
+  line-height: 45px;
+
+  @include media-breakpoint-down(lg){
+    font-size: 12px;
+    line-height: 20px;
+  }
+  @include media-breakpoint-down(md){
+    font-size: 27px;
+    line-height: 47px;
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 12px;
+    line-height: 20px;
+  }
+
 }
 
 em{
