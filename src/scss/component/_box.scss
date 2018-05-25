@@ -1,5 +1,23 @@
 .box{
-  padding: 100px 80px;
+  padding: 65px 65px 30px 130px;
+  width: 50%;
+
+  &--top{
+    border-bottom: 3px solid #fff;
+    padding-bottom: 55px;
+  }
+
+  &--left{
+    border-right: 3px solid #fff;
+    padding-right: 135px;
+    padding-left: 65px;
+  }
+
+  &:last-child{
+    padding-left: 75px;
+    padding-right: 10px;
+  }
+
 
   @include media-breakpoint-down(sm){
     margin: 20px 0;

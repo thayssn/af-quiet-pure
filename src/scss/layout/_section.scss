@@ -17,12 +17,14 @@
       margin-top: 30px;
     }
 
+    .banner-wrapper{
+      position: relative;
+    }
+
     .ilustrative_image{
       width: 484px;
       position: absolute;
       bottom: 0;
-      left: 50%;
-      transform: translate(-60%);
 
       @include media-breakpoint-down(md){
         position: relative;

@@ -1,0 +1,36 @@
+.product{
+
+  &__intro{
+    background: url(../img/quietpure-bg.jpg) top center no-repeat;
+    height: 1950px;
+  }
+
+  &__info{
+    background: url(../img/desk-bg.jpg) bottom center no-repeat;
+  }
+
+  &__example{
+    padding-top: 200px;
+  }
+
+  &__text-wrapper{
+    &--intro{
+      padding-top: 350px;
+    }
+
+    &--info{
+      padding-bottom: 860px;
+    }
+
+    &--operation{
+      padding: 75px 0 170px;
+    }
+  }
+
+  &__image{
+    padding: 237px 0;
+    text-align: center;
+
+    img{ display: inline-block; }
+  }
+}
