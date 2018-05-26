@@ -1,0 +1,43 @@
+.accordion{
+  padding-top: 60px;
+  text-align: left;
+
+  &__item{
+    font-size: 25px;
+    padding: 25px 35px 25px 138px;
+
+    &:nth-child(odd){
+      background-color: #e7f9f7;
+    }
+
+    .question{
+      padding-bottom: 0;
+      transition: padding-bottom 0.25s ease-out;
+
+      &:hover{
+        cursor: pointer;
+      }
+
+      &::after{
+        content: "\25B6";
+        color: #676766;
+        float: right;
+        transition: transform 0.25s ease-out;
+      }
+
+      &.active{
+        padding-bottom: 25px;
+
+        &::after{
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    .answer{
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+  }
+}

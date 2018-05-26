@@ -3,4 +3,14 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+
+  &--crop{
+    clip-path: polygon(138px 0, 100% 0, 100% 100%, 0 100%, 0 138px);
+    padding: 145px 0 120px;
+  }
+
+  &--small{
+    padding: 145px 0 90px;
+    margin-top: 310px;
+  }
 }

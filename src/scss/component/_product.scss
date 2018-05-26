@@ -1,7 +1,7 @@
 .product{
 
   &__intro{
-    background: url(../img/quietpure-bg.jpg) top center no-repeat;
+    background: url(../img/quietpure-bg-wave.jpg) top center no-repeat;
     height: 1950px;
   }
 
@@ -25,6 +25,37 @@
     &--operation{
       padding: 75px 0 170px;
     }
+
+    &--room{
+      padding: 365px 0 240px;
+
+      p{ padding: 0 100px; }
+    }
+
+    &--design{
+      padding-top: 155px;
+
+      &:first-child{
+        padding-top: 200px;
+      }
+    }
+
+    &--filter{
+      padding-top: 130px;
+      text-align: left;
+
+      h3{
+        width: 50%;
+      }
+      p{
+        padding-right: 120px;
+      }
+    }
+
+    &--dimension{
+      padding-top: 50px;
+      text-align: left;
+    }
   }
 
   &__image{
@@ -32,5 +63,63 @@
     text-align: center;
 
     img{ display: inline-block; }
+
+    &--pad-big{
+      padding: 335px 0;
+    }
+
+    &--pad-none{
+      padding: 0;
+    }
+
+    &--no-container{
+      width: 100%;
+    }
+  }
+
+  &__design{
+    background: url(../img/quietpure-bg.jpg) bottom left no-repeat;
+  }
+
+  &__design-content{
+    padding-right: 125px;
+  }
+
+  &__link{
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 25px;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &__form{
+    padding: 70px 0;
+    font-size: 25px;
+
+    label{
+      margin-bottom: 13px;
+    }
+
+    input,
+    textarea{
+      padding: 10px;
+      font-size: 25px;
+    }
+
+    textarea{
+      min-height: 200px;
+      resize: none;
+      width: 100%;
+    }
+
+    .input-group{
+      padding: 0 40px;
+      margin-bottom: 26px;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
