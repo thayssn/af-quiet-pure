@@ -1,6 +1,23 @@
 .menu{
   width: 100%;
 
+  &.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  @include media-breakpoint-down(lg){
+    position: fixed;
+    transform: translateY(-100%);
+    width: 100%;
+    height: 100vh;
+    top: 120px;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(255,255,255, 0.9);
+    transition: all 0.2s ease-in;
+  }
+
   &__list{
     width: 100%;
     display: flex;
@@ -8,6 +25,12 @@
 
     @include media-breakpoint-down(lg){
       flex-direction: column;
+      padding-top: 120px;
+    }
+
+    @include media-breakpoint-down(lg){
+      flex-direction: column;
+      padding-top: 60px;
     }
   }
 
@@ -15,6 +38,19 @@
     font-size: 35px;
     color: $gray;
     transition: 0.3s;
+
+    @include media-breakpoint-down(lg){
+      color: $purple;
+      font-size: 80px;
+      font-weight: 700;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    @include media-breakpoint-down(xs){
+      padding: 20px 0;
+      font-size: 40px;
+    }
 
     &:hover{
       color: $light_blue;

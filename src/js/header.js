@@ -1,5 +1,7 @@
   var header = document.querySelector('header');
   var content = document.querySelector('main');
+  var menu = header.querySelector('.menu');
+  var menuBtn = header.querySelector('#openMenu');
   var headerInitialTop = header.offsetTop;
   var lastPosition = 0;
   var ticking = false;
@@ -9,10 +11,11 @@
     link.addEventListener('click', function(e){
       e.preventDefault();
       var anchor = this.querySelector('a');
+      var target = document.querySelector(anchor.getAttribute('href'));
 
-      document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+      window.scroll({
+        top: target.offsetTop - 120,
         behavior: 'smooth',
-        block:    "start"
       });
 
       if(window.innerWidth < 992){
@@ -48,9 +51,21 @@
   });
 
   function openMenu(){
-    header.style.display = 'flex'
+    menuBtn.classList.add('active');
+    menu.classList.add('active');
   }
 
   function closeMenu(){
-    header.style.display = 'none'
+    menuBtn.classList.remove('active');
+    menu.classList.remove('active');
   }
+
+  menuBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    if(menuBtn.classList.contains('active')){
+
+      closeMenu();
+    }else{
+      openMenu();
+    }
+  })

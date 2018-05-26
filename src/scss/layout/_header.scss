@@ -9,13 +9,25 @@
   top: 0;
   z-index: 10;
 
-  &__row{
+  &__container{
+    display: flex;
+    align-items: center;
     position: relative;
   }
 
   &__icon{
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
+    transform: translateY(-50%);
+  }
+
+  &__row{
+    width: 100%;
+    text-align: center;
+
+    @include media-breakpoint-up(md){
+      position: relative;
+    }
   }
 }

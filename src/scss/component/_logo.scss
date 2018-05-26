@@ -1,6 +1,13 @@
 .logo{
+  position: relative;
+  z-index: 10;
+
   img{
     max-width: 100%;
     display: block;
+
+    @include media-breakpoint-down(sm){
+      margin: 0 auto;
+    }
   }
 }
