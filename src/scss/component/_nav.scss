@@ -47,7 +47,7 @@
       padding: 40px 0;
     }
 
-    @include media-breakpoint-down(xs){
+    @include media-breakpoint-down(sm){
       padding: 20px 0;
       font-size: 40px;
     }

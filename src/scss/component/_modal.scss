@@ -1,0 +1,70 @@
+.modal{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  height: calc(100vh - 20px);
+  width: calc(100vw - 20px);
+  z-index: 999;
+  background-color: rgba(0,0,0,0.9);
+  color: #fff;
+
+  &.hidden{
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+  }
+
+  .container-fluid{
+    height: auto;
+  }
+
+  &__close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    [class*="bar"]{
+      background: #fff;
+    }
+  }
+
+  h3{
+    color: $purple;
+    text-align: left;
+
+    @include media-breakpoint-down(md){
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &__form{
+    padding: 70px 0;
+    font-size: 25px;
+
+    label{
+      margin-bottom: 13px;
+    }
+
+    input,
+    textarea{
+      padding: 10px;
+      font-size: 25px;
+    }
+
+    textarea{
+      min-height: 200px;
+      resize: none;
+      width: 100%;
+    }
+
+    .input-group{
+      padding: 0 40px;
+      margin-bottom: 26px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+}
