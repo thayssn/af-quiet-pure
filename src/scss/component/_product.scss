@@ -3,6 +3,11 @@
   &__intro{
     background: url(../img/quietpure-bg-wave.jpg) top center no-repeat;
     height: 1950px;
+    background-size: contain;
+
+    @include media-breakpoint-down(lg){
+      background-position-y: 300px;
+    }
 
     @include media-breakpoint-down(md){
       background-size: contain;
@@ -37,6 +42,10 @@
 
       &.color--purple{
         margin-bottom: 0;
+      }
+
+      @include media-breakpoint-down(lg){
+        font-size: 60px;
       }
 
       @include media-breakpoint-down(md){
@@ -79,6 +88,10 @@
 
     &--operation{
       padding: 75px 0 170px;
+
+      @media (min-width: 1305px) and (max-width: 1700px){
+        padding-bottom: 80px;
+      }
     }
 
     &--room{
@@ -99,6 +112,10 @@
 
       &:first-child{
         padding-top: 200px;
+
+        @media (max-width: 1500px){
+          padding-top: 0;
+        }
       }
 
       @include media-breakpoint-down(md){
@@ -121,6 +138,13 @@
         padding-right: 120px;
       }
 
+      @media (max-width: 1600px){
+        padding-top: 50px;
+        p{padding-right: 20px;}
+
+        h3{ width: 80%; }
+      }
+
       @include media-breakpoint-down(md){
         padding: 0px 0 100px;
 
@@ -131,12 +155,20 @@
     &--dimension{
       padding-top: 50px;
       text-align: left;
+
+      @media (max-width: 1600px){
+        padding-top: 0;
+      }
     }
   }
 
   &__image{
     padding: 237px 0;
     text-align: center;
+
+    @media (max-width: 1500px){
+      padding: 150px 0;
+    }
 
     @include media-breakpoint-down(md){
       padding: 80px 0 190px;
@@ -172,6 +204,10 @@
   &__design{
     background: url(../img/quietpure-bg.jpg) bottom left no-repeat;
 
+    @media (max-width: 1600px){
+      background-size: 60%;
+    }
+
     @include media-breakpoint-down(md){
       background: url(../img/quietpure-bg-mobile.jpg) top center no-repeat;
     }
@@ -179,6 +215,10 @@
 
   &__design-content{
     padding-right: 125px;
+
+    @media (max-width: 1500px){
+      padding-right: 10px;
+    }
 
     @include media-breakpoint-down(md){
       padding-right: 0;

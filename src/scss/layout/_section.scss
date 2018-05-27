@@ -5,8 +5,37 @@
     display: flex;
     align-items: center;
 
+    @media (min-width: 1305px) and (max-width: 1700px){
+      height: 940px;
+    }
+
+    @media (min-width: 1080px) and (max-width: 1305px){
+      height: 1050px;
+    }
+
+    @media (max-width: 1080px){
+      height: 1150px;
+    }
+
     @include media-breakpoint-down(md){
       height: 1700px;
+    }
+
+    @media (max-width: 700px){
+      height: 1500px;
+      overflow: hidden;
+    }
+
+    @include media-breakpoint-down(xs){
+      height: 1145px;
+    }
+
+    @media (max-width: 485px){
+      height: 900px;
+    }
+
+    @media (max-width: 400px){
+      height: 700px;
     }
 
     h2{
@@ -35,6 +64,10 @@
 
   &--silux{
     padding: 400px 0;
+
+    @media (max-width: 1500px){
+      padding: 250px 0;
+    }
 
     @include media-breakpoint-down(md){
       padding: 160px 0;

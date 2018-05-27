@@ -2,6 +2,14 @@
   padding: 65px 65px 30px 130px;
   width: 50%;
 
+  @media (max-width: 1500px){
+    padding: 50px 50px 30px 100px;
+  }
+
+  @include media-breakpoint-down(lg){
+    padding: 30px;
+  }
+
   @include media-breakpoint-down(md){
     background-color: $purple;
     width: 100%;
@@ -26,6 +34,7 @@
     border-bottom: 3px solid #fff;
     padding-bottom: 55px;
 
+
     @include media-breakpoint-down(md){
       padding: 0 80px !important;
     }
@@ -35,6 +44,14 @@
     border-right: 3px solid #fff;
     padding-right: 135px;
     padding-left: 65px;
+
+    @media (max-width: 1500px){
+      padding-right: 90px;
+    }
+    @include media-breakpoint-down(lg){
+      padding-left: 30px;
+      padding-right: 60px;
+    }
   }
 
   &:last-child{

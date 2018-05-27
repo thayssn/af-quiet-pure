@@ -3,6 +3,10 @@
   background-color: $yellow;
   height: 892px;
 
+  @include media-breakpoint-down(lg){
+    height: 1000px;
+  }
+
   @include media-breakpoint-down(md){
     height: 1300px;
   }

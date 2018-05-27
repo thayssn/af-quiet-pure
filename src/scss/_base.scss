@@ -2,6 +2,12 @@ body{
   font-family: 'Akrobat';
 }
 
+.offset-none{
+  @media (max-width: 1500px){
+    margin-left: 0;
+  }
+}
+
 .container-fluid{
   padding: 0 100px;
   height: 100%;
@@ -33,10 +39,6 @@ h3{
   font-weight: 300;
   line-height: 1;
 
-  @include media-breakpoint-down(lg){
-    font-size: 37px
-  }
-
   @include media-breakpoint-down(md){
     font-size: 75px
   }
@@ -50,10 +52,6 @@ h4{
   font-size: 41px;
   font-weight: bold;
 
-  @include media-breakpoint-down(lg){
-    font-size: 20px;
-  }
-
   @include media-breakpoint-down(md){
     font-size: 41px;
   }
@@ -66,10 +64,6 @@ h4{
 
 h5{
   font-size: 57px;
-
-  @include media-breakpoint-down(lg){
-    font-size: 28px;
-  }
 
   @include media-breakpoint-down(md){
     font-size: 55px;
@@ -86,10 +80,6 @@ p{
   line-height: 40px;
   color: #666;
 
-  @include media-breakpoint-down(lg){
-    font-size: 12px;
-    line-height: 20px;
-  }
   @include media-breakpoint-down(md){
     font-size: 27px;
     line-height: 47px;
