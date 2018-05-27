@@ -1,53 +1,50 @@
-.header__icon{
-  .icon{
-    width: 50px;
-    height: 45px;
+.icon{
+  width: 50px;
+  height: 45px;
 
-    .bar1, .bar2, .bar3{
-      position: absolute;
-      top: 0;
-      left: 0px;
-      display: block;
-      font-size: 10px;
-      padding: 0;
-      appearance: none;
-      width: 50px;
-      height: 7px;
-      border-radius: 4px;
-      background-color: $purple;
-      transition: all 0.2s ease-in;
-      transform: rotate(0deg);
-    }
-    .bar2{
+  .bar1, .bar2, .bar3{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: block;
+    font-size: 10px;
+    padding: 0;
+    appearance: none;
+    width: 50px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: $purple;
+    transition: all 0.2s ease-in;
+    transform: rotate(0deg);
+  }
+  .bar2{
+    top:19px;
+  }
+  .bar3{
+    top:38px;
+  }
+
+}
+
+.active{
+  .icon{
+    .bar1{
       top:19px;
+      transform: rotate(-135deg);
+      transition: all 0.2s ease-in;
+    }
+
+    .bar2{
+      left:25px;
+      opacity: 0;
+      transition: all 0.2s ease-in;
+
     }
     .bar3{
-      top:38px;
-    }
+      top:19px;
 
-  }
-
-  &.active{
-    .icon{
-      .bar1{
-        top:19px;
-        transform: rotate(-135deg);
-        transition: all 0.2s ease-in;
-      }
-
-      .bar2{
-        left:25px;
-        opacity: 0;
-        transition: all 0.2s ease-in;
-
-      }
-      .bar3{
-        top:19px;
-
-        transform: rotate(135deg);
-        transition: all 0.2s ease-in;
-      }
+      transform: rotate(135deg);
+      transition: all 0.2s ease-in;
     }
   }
-
 }

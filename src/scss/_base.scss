@@ -26,10 +26,6 @@ h2{
   font-size: 82px;
 
   @include media-breakpoint-down(sm){
-    font-size: 82px
-  }
-
-  @include media-breakpoint-down(xs){
     font-size: 41px
   }
 }
@@ -43,7 +39,7 @@ h3{
     font-size: 75px
   }
 
-  @include media-breakpoint-down(xs){
+  @include media-breakpoint-down(sm){
     font-size: 37px
   }
 }
@@ -56,7 +52,7 @@ h4{
     font-size: 41px;
   }
 
-  @include media-breakpoint-down(xs){
+  @include media-breakpoint-down(sm){
     font-size: 20px;
   }
 
@@ -69,7 +65,7 @@ h5{
     font-size: 55px;
   }
 
-  @include media-breakpoint-down(xs){
+  @include media-breakpoint-down(sm){
     font-size: 28px;
   }
 
@@ -84,7 +80,7 @@ p{
     font-size: 27px;
     line-height: 47px;
   }
-  @include media-breakpoint-down(xs){
+  @include media-breakpoint-down(sm){
     font-size: 12px;
     line-height: 20px;
   }

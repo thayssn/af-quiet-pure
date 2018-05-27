@@ -14,7 +14,7 @@
       var target = document.querySelector(anchor.getAttribute('href'));
 
       window.scroll({
-        top: target.offsetTop - 120,
+        top: (target.offsetTop - 120),
         behavior: 'smooth',
       });
 
@@ -63,7 +63,6 @@
   menuBtn.addEventListener('click', function(e){
     e.preventDefault();
     if(menuBtn.classList.contains('active')){
-
       closeMenu();
     }else{
       openMenu();
