@@ -2,9 +2,33 @@
   padding: 65px 65px 30px 130px;
   width: 50%;
 
+  @include media-breakpoint-down(md){
+    background-color: $purple;
+    width: 100%;
+    margin-bottom: 80px;
+    padding: 0 45px !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 375px;
+
+    p{ line-height: 37px; }
+  }
+
+  @include media-breakpoint-down(sm){
+    margin: 20px 0;
+  }
+
+  p{ color: white; }
+
   &--top{
     border-bottom: 3px solid #fff;
     padding-bottom: 55px;
+
+    @include media-breakpoint-down(md){
+      padding: 0 80px !important;
+    }
   }
 
   &--left{
@@ -18,8 +42,4 @@
     padding-right: 10px;
   }
 
-
-  @include media-breakpoint-down(sm){
-    margin: 20px 0;
-  }
 }

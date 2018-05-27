@@ -3,8 +3,17 @@
   background-color: $yellow;
   height: 892px;
 
+  @include media-breakpoint-down(md){
+    height: 1300px;
+  }
+
   h5{
     padding: 270px 115px 89px 0;
+
+    @include media-breakpoint-down(md){
+      padding: 0 65px;
+      text-align: center;
+    }
   }
 
   &__social{
@@ -15,10 +24,16 @@
     img{
       height: 47px;
     }
+
+    @include media-breakpoint-down(md){
+      margin-top: 95px;
+      text-align: center;
+    }
   }
 
   &__image-wrapper{
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }

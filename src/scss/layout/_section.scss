@@ -6,7 +6,7 @@
     align-items: center;
 
     @include media-breakpoint-down(md){
-      height: auto;
+      height: 1700px;
     }
 
     h2{
@@ -22,23 +22,37 @@
     }
 
     .ilustrative_image{
-      width: 484px;
+      display: flex;
+      justify-content: center;
       position: absolute;
       bottom: 0;
 
       @include media-breakpoint-down(md){
         position: relative;
-        transform: translate(-50%);
       }
     }
   }
 
   &--silux{
     padding: 400px 0;
+
+    @include media-breakpoint-down(md){
+      padding: 160px 0;
+      text-align: center;
+
+      img{
+        margin-bottom: 90px;
+      }
+    }
   }
 
   &--contact{
     padding: 300px 0 290px;
     h3{ margin-bottom: 55px }
+
+    @include media-breakpoint-down(md){
+      padding-bottom: 150px;
+      h3{ margin-bottom: 250px 0 35px }
+    }
   }
 }

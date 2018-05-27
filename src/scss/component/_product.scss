@@ -3,23 +3,78 @@
   &__intro{
     background: url(../img/quietpure-bg-wave.jpg) top center no-repeat;
     height: 1950px;
+
+    @include media-breakpoint-down(md){
+      background-size: contain;
+      background-position-y: 270px;
+      height: auto;
+    }
   }
 
   &__info{
     background: url(../img/desk-bg.jpg) bottom center no-repeat;
+
+    @include media-breakpoint-down(md){
+      background-size: 150%;
+    }
   }
 
   &__example{
     padding-top: 200px;
+
+    @include media-breakpoint-down(md){
+      padding-top: 65px;
+    }
   }
 
   &__text-wrapper{
+    h3{
+      margin-bottom: 45px;
+
+      &.color--yellow{
+        margin-bottom: 60px;
+      }
+
+      &.color--purple{
+        margin-bottom: 0;
+      }
+
+      @include media-breakpoint-down(md){
+        margin-bottom: 70px;
+
+        &.color--yellow{
+          margin-bottom: 35px;
+        }
+
+        &.color--green{
+          margin-bottom: 25px;
+        }
+      }
+    }
+
     &--intro{
       padding-top: 350px;
+
+      h3.color--purple{
+        margin-bottom: 50px;
+      }
+
+      @include media-breakpoint-down(md){
+        padding-bottom: 600px;
+        padding-top: 244px;
+
+        h3.color--purple{
+          margin-bottom: 35px;
+        }
+      }
     }
 
     &--info{
       padding-bottom: 860px;
+
+      @include media-breakpoint-down(md){
+        padding-bottom: 755px;
+      }
     }
 
     &--operation{
@@ -30,6 +85,13 @@
       padding: 365px 0 240px;
 
       p{ padding: 0 100px; }
+
+      @include media-breakpoint-down(md){
+        padding: 255px 0 90px;
+
+        h3{ padding: 0 100px; }
+        p{ padding: 0;}
+      }
     }
 
     &--design{
@@ -37,6 +99,14 @@
 
       &:first-child{
         padding-top: 200px;
+      }
+
+      @include media-breakpoint-down(md){
+        text-align: center;
+
+        &:first-child{
+          padding-top: 1480px;
+        }
       }
     }
 
@@ -50,6 +120,12 @@
       p{
         padding-right: 120px;
       }
+
+      @include media-breakpoint-down(md){
+        padding: 0px 0 100px;
+
+        h3{ width: 43%; }
+      }
     }
 
     &--dimension{
@@ -62,10 +138,26 @@
     padding: 237px 0;
     text-align: center;
 
+    @include media-breakpoint-down(md){
+      padding: 80px 0 190px;
+
+      &--room{
+        padding: 0;
+      }
+
+      &--icon{
+        padding: 135px 0;
+      }
+    }
+
     img{ display: inline-block; }
 
     &--pad-big{
       padding: 335px 0;
+
+      @include media-breakpoint-down(md){
+        padding: 240px 0 0px;
+      }
     }
 
     &--pad-none{
@@ -79,10 +171,18 @@
 
   &__design{
     background: url(../img/quietpure-bg.jpg) bottom left no-repeat;
+
+    @include media-breakpoint-down(md){
+      background: url(../img/quietpure-bg-mobile.jpg) top center no-repeat;
+    }
   }
 
   &__design-content{
     padding-right: 125px;
+
+    @include media-breakpoint-down(md){
+      padding-right: 0;
+    }
   }
 
   &__link{
