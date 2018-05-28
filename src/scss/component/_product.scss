@@ -59,6 +59,10 @@
           margin-bottom: 25px;
         }
       }
+
+      @media (max-width: 600px){
+        font-size: 45px;
+      }
     }
 
     &--intro{
@@ -76,6 +80,10 @@
           margin-bottom: 35px;
         }
       }
+
+      @media (max-width: 600px){
+        padding: 140px 0;
+      }
     }
 
     &--info{
@@ -84,6 +92,10 @@
       @include media-breakpoint-down(md){
         padding-bottom: 755px;
       }
+
+      @media (max-width: 600px){
+        padding-bottom: 300px;
+      }
     }
 
     &--operation{
@@ -91,6 +103,10 @@
 
       @media (min-width: 1305px) and (max-width: 1700px){
         padding-bottom: 80px;
+      }
+
+      @media (max-width: 600px){
+        padding: 0 0 60px;
       }
     }
 
@@ -104,6 +120,11 @@
 
         h3{ padding: 0 100px; }
         p{ padding: 0;}
+      }
+
+      @media (max-width: 580px){
+        padding: 0 0 50px;
+        h3{ padding: 0; }
       }
     }
 
@@ -123,6 +144,20 @@
 
         &:first-child{
           padding-top: 1480px;
+        }
+      }
+
+      @media (max-width: 800px){
+        &:first-child{
+          padding-top: 1100px;
+        }
+      }
+
+      @media (max-width: 600px){
+        padding-top: 50px;
+
+        &:first-child{
+          padding-top: 600px;
         }
       }
     }
@@ -149,6 +184,10 @@
         padding: 0px 0 100px;
 
         h3{ width: 43%; }
+      }
+
+      @media (max-width: 800px){
+        h3{ width: 100%;}
       }
     }
 
@@ -182,6 +221,12 @@
       }
     }
 
+    .image-mobile{
+      @media (max-width: 600px){
+        width: 60%;
+      }
+    }
+
     img{ display: inline-block; }
 
     &--pad-big{
@@ -189,6 +234,10 @@
 
       @include media-breakpoint-down(md){
         padding: 240px 0 0px;
+      }
+
+      @media (max-width: 600px){
+        padding: 70px 0;
       }
     }
 
@@ -210,6 +259,7 @@
 
     @include media-breakpoint-down(md){
       background: url(../img/quietpure-bg-mobile.jpg) top center no-repeat;
+      background-size: contain;
     }
   }
 
