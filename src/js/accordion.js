@@ -13,3 +13,14 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+var seeMore = document.querySelector('#seemore');
+var accordionItem = document.querySelectorAll('.accordion__item.hidden')
+
+seeMore.addEventListener('click', function(e){
+  e.preventDefault();
+  accordionItem.forEach(function(item){
+    item.classList.remove('hidden');
+  })
+  seeMore.style.display =  'none';
+});
