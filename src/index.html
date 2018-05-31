@@ -31,7 +31,18 @@
         </nav>
       </div>
       <div class="d-none d-xl-flex offset-lg-1 col-lg-2">
-        <a href="#comprar" class="btn btn--uppercase btn--coral">Comprar</a>
+        <a href="#comprar" class="btn">
+          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+          <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="0036FCB2848441D22447AFAB9CE3DF4A" />
+            <input type="hidden" name="iot" value="button" />
+            <input type="image" src="assets/img/pag.jpg" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+          </form>
+          <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+
+        </a>
       </div>
       <div id="openMenu" class="header__icon d-xl-none">
         <div class="wrapper">
