@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>QuietPure</title>
+
+  <link rel="icon" href="assets/img/fav.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Karma|Roboto+Mono" rel="stylesheet">
+  <link href="assets/css/style.min.css" rel="stylesheet">
+
+</head>
+<body>
+<header class="header">
+  <div class="container-fluid header__container">
+    <div class="row header__row align-items-center">
+      <div class="col-lg-4 col-xl-2">
+        <h1 class="logo"><img src="assets/img/logo.png" alt="QuietPure"></h1>
+      </div>
+      <div class="col-12 offset-lg-1 col-lg-6">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#o-produto">O Produto</a></li>
+            <li class="menu__item"><a href="#como-funciona">Como Funciona</a></li>
+            <li class="menu__item"><a href="#a-silux">A Silux</a></li>
+            <li class="menu__item"><a href="#faq">F.A.Q.</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-none d-xl-flex offset-lg-1 col-lg-2">
+        <a href="#comprar" class="btn">
+          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+          <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="0036FCB2848441D22447AFAB9CE3DF4A" />
+            <input type="hidden" name="iot" value="button" />
+            <input type="image" src="assets/img/pag.jpg" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+          </form>
+          <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+
+        </a>
+      </div>
+      <div id="openMenu" class="header__icon d-xl-none">
+        <div class="wrapper">
+          <div class="icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="section section--banner bg--purple">
+    <div class="container-fluid">
+      <div class="row h-100 banner-wrapper">
+        <div class="order-2 order-lg-1 col-12 col-lg-6 d-flex">
+          <img src="assets/img/urso.png" alt="Imagem de destaque" class="align-self-center">
+        </div>
+        <div class="order-1 order-lg-2 col-12 col-lg-6">
+          <h2><em>A Poluição Indoor</em> existe.
+            Sua casa está protegida?</h2>
+          <h4>Elimine a Poluição Indoor agora com QuietPure</h4>
+        </div>
+        <div class="order-3 col-12 col-lg-6 offset-lg-6 ilustrative_image">
+          <img src="assets/img/produto.png" alt="Produto da quiet pure">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section product" id="o-produto">
+    <div class="container-fluid product__intro">
+      <div class="row justify-content-center">
+        <div class="col-6 offset-6 offset-lg-7 col-lg-4">
+          <div class="product__text-wrapper product__text-wrapper--intro">
+            <h3 class="color--purple">
+              Elimine <br>
+              até 99,97% <br>
+              da Poluição <br>
+              Indoor!</h3>
+            <p>Você sabia que ambientes internos podem abrigar muito mais poluição do que uma avenida na hora do rush? O purificador Quiet Pure foi projetado para eliminar a poluição indoor da sua casa ou escritório.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid product__info">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 offset-lg-1 text-center">
+          <div class="product__text-wrapper product__text-wrapper--info">
+            <h3 class="color--yellow ">Mas o que é Poluição Indoor?</h3>
+            <p>O fumo, a queima de gases em fogões e aquecedores, assim como químicos em móveis, desodorantes, aromatizadores de ar e produtos de limpeza doméstica. Ácaros, mofo e pelos de animais de estimação também completam a lista. Isso tudo somado àquela poeira externa já conhecida das grandes cidades deixam a sua casa e seu escritório com ar muito pouco saudável.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid product__example">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 text-center">
+          <p>Pouca gente sabe disso, mas a poluição do ar encontrada dentro de casa pode comprometer seriamente a sua saúde. Quando pensamos em poluição geralmente imaginamos aquela fumaça preta saindo de chaminés de fábricas ou escapamentos de carro. Mas a poluição indoor é causada por diversos fatores.</p>
+        </div>
+        <div class="col-12">
+          <div class="product__image product__image--icon">
+            <img src="assets/img/icones.png " alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="como-funciona">
+    <div class="container-fluid">
+      <div class="row justify-content-center ">
+        <div class="col-12 text-center">
+          <div class="product__text-wrapper product__text-wrapper--operation">
+            <h3 class="color--purple">Como Quiet Pure funciona?</h3>
+            <p>O Purificador Quiet Pure possui 4 diferentes tecnologias de purificação de ar.</p>
+          </div>
+        </div>
+        <div class="col-10 product__operation">
+          <div class="card card--square bg--purple">
+            <div class="box box--top box--left">
+              <h5>HEPA</h5>
+              <p>O filtro HEPA é capaz de capturar até 99,97% das mais microscópicas partículas de poluição indoor.</p>
+            </div>
+            <div class="box box--top">
+              <h5>Carvão Ativado</h5>
+              <p>A camada de carvão ativado bloqueia partículas maiores de poluição e reduz odores indesejados.</p>
+            </div>
+            <div class="box box--left">
+              <h5>Ionização</h5>
+              <p>A ionização é capaz de retirar do ar respirável milhares de materiais particulados, poeira e outros alergênios, incluindo fungos e bactérias, que estejam suspensos no ar.</p>
+            </div>
+            <div class="box">
+              <h5>Active Pure</h5>
+              <p>A tecnologia Active Pure produz um plasma gasoso baseado em oxidantes naturais, derivados de Hidrogênio e Oxigênio, que combatem ativamente a poluição indoor até nos cantos de acesso mais remotos do seu ambiente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="product__image product__image--pad-big">
+            <img class="d-lg-block d-none" src="assets/img/quietpure-operation.jpg" alt="">
+            <img class="d-block d-lg-none" src="assets/img/quietpure-operation-mobile.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card card--crop bg--green">
+            <div class="row justify-content-center">
+              <div class="col-8 offset-lg-1 col-lg-4">
+                <div class="product__text-wrapper product__text-wrapper--filter">
+                  <h3>Troca do filtro.</h3>
+                  <p>O purificador Quiet Pure exige muito pouca manutenção. O único item que necessita de troca periódica é o filtro HEPA. O Quiet Pure avisa, através de um indicador no painel, que é hora de fazer a troca de maneira simples e rápida. Você mesmo pode realizar a manutenção.</p>
+                </div>
+              </div>
+              <div class="col-10 col-lg-6">
+                <div class="product__image product__image--pad-none">
+                  <img src="assets/img/quietpure-filter.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 text-center">
+          <div class="product__text-wrapper product__text-wrapper--room">
+            <h3 class="color--purple">Elimine a Poluição Indoor agora.</h3>
+            <p>O purificador de ar Quiet Pure foi projetado para cumprir uma única missão: eliminar a poluição indoor dos ambientes internos do nosso dia a dia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__image product__image--room product__image--no-container">
+      <img class="d-none d-lg-block" src="assets/img/quietpure-room.jpg" alt="">
+      <img class="d-block d-lg-none" src="assets/img/quietpure-room-mobile.jpg" alt="">
+    </div>
+    <div class="container-fluid product__design">
+      <div class="row justify-content-center">
+        <div class="col-12 offset-lg-7 col-lg-5">
+          <div class="product__design-content">
+            <div class="product__text-wrapper product__text-wrapper--design">
+              <h3 class="color--green">Design.</h3>
+              <p>Seu design minimalista e estrutura compacta combinam perfeitamente com a sua decoração, enquanto seu sistema de tripla filtragem combina com a saúde da sua família.</p>
+            </div>
+            <div class="product__text-wrapper product__text-wrapper--design">
+              <h3 class="color--green">Tecnologia aprovada pela NASA.</h3>
+              <p>Você não precisa ser especialista em engenharia e física para saber que a NASA trabalha nas condições mais extremas e isso pede as mais avançadas tecnologias. O sistema de purificação indoor do Quiet Pure é utilizado pelos astronautas num dos ambientes mais fechados que que existe: a estação espacial internacional.</p>
+            </div>
+            <div class="product__image">
+              <img class="image-mobile" src="assets/img/selo-nasa.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__image product__image--no-container product__image--pad-none">
+      <img src="assets/img/quietpure-couch.jpg" alt="">
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="card card--crop card--small bg--green">
+            <div class="row justify-content-center ">
+              <div class="offset-lg-1 col-10 col-lg-6 offset-none">
+                <div class="product__image product__image--pad-none">
+                  <img src="assets/img/quietpure-dimension.jpg" alt="">
+                </div>
+              </div>
+              <div class="offset-0 offset-xl-1 col-7 col-sm-10 col-lg-4 offset-none">
+                <div class="product__text-wrapper product__text-wrapper--dimension">
+                  <h3>Especificações técnicas.</h3>
+                  <p>Fluxo de ar: 160 CFM<br>
+                    Taxa de filtragem: acima de 99,97%<br>
+                    Quantidade de filtros: 3<br>
+                    Sensores de qualidade de ar: PM2.5 e VOC<br>
+                    Cores de luz ambiente: 16.7 milhões<br>
+                    Peso: 5 kg<br>
+                    Consumo de energia: 25-65W<br>
+                    Área de alcance: acima de 52m2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="section--silux" id="a-silux">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 offset-lg-1 col-lg-3">
+          <div class="product__image product__image--pad-none">
+            <img class="image-mobile" src="assets/img/logo-silux.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-12 offset-lg-1 col-lg-6">
+          <p>A Silux é a unidade de negócios do Grupo Ecoquest responsável pela prestação de serviços de descontaminação de ambientes interiores.<br>
+            Criada em maio de 2008, utiliza a tecnologia RCI para eliminar odores, gases voláteis, fumaça e até 99,99% de fungos e bactérias de locais fechados, e trata não só o ar, mas a superfície e os objetos que ali permanecem durante a descontaminação. No final de 2008, a Silux passou a atuar em locação mensal de equipamentos utilizados por hotéis, empresas imobiliárias e outros segmentos em todo o mundo para a remoção completa de odores, como o cigarro e o mofo dos quartos e salas.</p>
+          <a class="color--purple product__link" target="_blank" href="http://silux.com.br">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--faq text-center" id="faq">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h3 class="color--green">Perguntas frequentes.</h3>
+          <ul class="accordion">
+            <li class="accordion__item">
+              <div class="question">
+                O Quiet Pure é recomendável para quem:
+              </div>
+              <div class="answer">O purificador Quiet Pure é sugerido para as pessoas que sofrem com alergias e asma, são sensíveis à poeiras, animais de estimação e pólen.</div>
+            </li>
+            <li class="accordion__item">
+              <div class="question">
+                Qual é a capacidade do Quiet Pure:
+              </div>
+              <div class="answer">O purificador Quiet Pure é capaz de melhorar a qualidade do ar em ambientes de até 23 m2.</div>
+            </li>
+            <li class="accordion__item">
+              <div class="question">
+                Quais são as tecnologias utilizadas no Quiet Pure:
+              </div>
+              <div class="answer">São utilizadas a exclusiva tecnologia espacial ActivePure e a combinação da filtragem HEPA com carvão ativado</div>
+            </li>
+            <li class="accordion__item">
+              <div class="question">
+                Qual é a garantia do equipamento:
+              </div>
+              <div class="answer">A garantia do purificador Quiet Pure é de 1 ano.</div>
+            </li>
+            <li class="accordion__item hidden">
+              <div class="question">
+                É necessário fazer alguma manutenção no equipamento:
+              </div>
+              <div class="answer">O filtro HEPA + carvão ativado deve ser trocado periodicamente. O equipamento avisa no painel quando chegar na hora da troca.</div>
+            </li>
+            <li class="accordion__item hidden">
+              <div class="question">
+                O Quiet Pure combate o mofo no ambiente:
+              </div>
+              <div class="answer">Sim, o purificador Quiet Pure combate o mofo, além de outros fungos, bactérias e até virus (estudos científicos comprovam a redução do vírus INFLUENZA nos ambientes)</div>
+            </li>
+            <li class="accordion__item hidden">
+              <div class="question">
+                Por que a tecnologia ActivePure, embarcada no Quiet Pure, foi certificada pela NASA:
+              </div>
+              <div class="answer">Essa tecnologia foi desenvolvida pela NASA e hoje é usada na estação espacial ISS. Por isso, recebe o pelo de Tecnologia Certificada Espacial, sendo a única no mundo a possuir tal validação.</div>
+            </li>
+            <li class="accordion__item hidden">
+              <div class="question">
+                Como devo usar o Quiet Pure:
+              </div>
+              <div class="answer">O equipamento deve ficar apoiado numa mesa de escritório, prateleira no quarto, no criado-mudo, ou seja, em alguma superfície mais alta dentro do ambiente. Nunca no chão. O equipamento deve ficar ligado 24 hs, diariamente.</div>
+            </li>
+          </ul>
+          <a href="#" id="seemore" class="see-more color--purple product__link">Veja mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--contact" id="contato">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h3 class="color--purple text-center">Contato.</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center bg--purple">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+          <form class="product__form">
+            <div class="input-group">
+              <label for="name">Seu nome (campo obrigatório)</label>
+              <input id="name" type="text">
+            </div>
+            <div class="input-group">
+              <label for="email">Seu e-mail (campo obrigatório)</label>
+              <input id="email" type="text">
+            </div>
+            <div class="input-group">
+              <label for="message">Sua mensagem</label>
+              <textarea id="message"></textarea>
+            </div>
+            <div class="input-group">
+              <button class="btn btn--green btn--uppercase" type="submit">enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row h-100 justify-content-center">
+      <div class="order-3 order-lg-1 col-12 offset-lg-2 col-lg-6">
+        <h5><em>A poluição indoor</em> existe.<br>
+        Quiet Pure ajuda você a deixar
+        sua casa ou escritório protegidos.</h5>
+        <div class="footer__social d-none d-lg-flex">
+          <a href=""><img src="assets/img/facebook-logo.svg" alt="facebook"></a>
+          <a href=""><img src="assets/img/instagram-logo.svg" alt="instagram"></a>
+          <a href=""><img src="assets/img/twitter-logo.svg" alt="twitter"></a>
+          <a href=""><img src="assets/img/youtube-logo.svg" alt="youtube"></a>
+        </div>
+      </div>
+      <div class="order-1 order-lg-2 col-12 d-block d-lg-none">
+        <div class="footer__social">
+          <a href=""><img src="assets/img/facebook-logo.svg" alt="facebook"></a>
+          <a href=""><img src="assets/img/instagram-logo.svg" alt="instagram"></a>
+          <a href=""><img src="assets/img/twitter-logo.svg" alt="twitter"></a>
+          <a href=""><img src="assets/img/youtube-logo.svg" alt="youtube"></a>
+        </div>
+      </div>
+      <div class="order-2 order-lg-3 col-8 col-lg-3 d-lg-flex">
+        <div class="footer__image-wrapper">
+          <img class="footer__image" src="assets/img/quietpure-dog.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal d-flex align-items-center justify-content-center">
+  <div class="container-fluid">
+    <div class="modal__close active">
+      <div class="icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 offset-lg-1 col-lg-4 col-lg-4">
+        <h3 class="modal__title">Cadastre-se no nosso mailling para receber novidades sobre o Quiet Pure</h3>
+      </div>
+      <div class="col-12 offset-lg-1 col-lg-6">
+        <form class="modal__form">
+          <div class="input-group">
+            <label for="name">Seu nome (campo obrigatório)</label>
+            <input id="name" type="text" required>
+          </div>
+          <div class="input-group">
+            <label for="email">Seu e-mail (campo obrigatório)</label>
+            <input id="email" type="text" required>
+          </div>
+          <div class="input-group">
+            <button class="btn btn--green btn--uppercase" type="submit">enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/js/scripts.min.js"></script>
+</body>
+</html>
